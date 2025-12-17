@@ -12,6 +12,7 @@ public class Student {
     private Integer id;
     private String name;
     private String email;
+    
     public int getId() {
         return id;
     }
