@@ -4,7 +4,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 
-@studentrepo
+@Repository
 public interface studentrepo extends JpaRepository<student,Integer>{
 
 }
