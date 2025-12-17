@@ -2,14 +2,15 @@ package com.example.project.entity;
 
 import java.time.LocalDate;
 import jakarta.persistance.Entity;
-import
+import jakarta.persistance.GeneratedValue;
+import jakarta.persistance.GeneratedType;
 
-public class student {
+public class StudentEntity {
+    @id
+    @GeneratedValue(strategy = G)
     private int id;
     private String name;
     private String email;
-    private LocalDate dob;
-    private float cgpa;
 
 
 public int getId() {
@@ -34,22 +35,6 @@ public String getEmail() {
 
 public void setEmail(String email) {
     this.email = email;
-}
-
-public LocalDate getDob() {
-    return dob;
-}
-
-public void setDob(LocalDate dob) {
-    this.dob = dob;
-}
-
-public float getCgpa() {
-    return cgpa;
-}
-
-public void setCgpa(float cgpa) {
-    this.cgpa = cgpa;
 }
 
 public student(){
