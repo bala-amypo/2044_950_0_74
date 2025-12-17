@@ -4,6 +4,6 @@ import org.springframework.web.bind.annotation.*;
 public calss basics {
     @GetMapping("/home")
     public String name() {
-        
+        return "hello world";
     }
 }
