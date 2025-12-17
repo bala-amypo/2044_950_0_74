@@ -1,6 +1,8 @@
 package com.example.project.entity;
 
 import java.time.LocalDate;
+import jakarta.persistance.Entity;
+import
 
 public class student {
     private int id;
