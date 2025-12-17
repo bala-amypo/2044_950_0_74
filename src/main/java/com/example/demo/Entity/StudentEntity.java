@@ -1,4 +1,4 @@
-package com.example.project.entity;
+package com.example.project.Entity;
 
 import java.time.LocalDate;
 import jakarta.persistance.Entity;
@@ -6,6 +6,7 @@ import jakarta.persistance.GeneratedValue;
 import jakarta.persistance.GeneratedType;
 import jakarta.persistance.*;
 
+@Entity
 public class StudentEntity {
     @id
     @GeneratedValue(strategy = GeneratedType.IDENTITY)
@@ -13,11 +14,11 @@ public class StudentEntity {
     private String name;
     private String email;
 
-public int getId() {
+public Integer getId() {
     return id;
 }
 
-public void setId(int id) {
+public void setId(Integer id) {
     this.id = id;
 }
 
@@ -41,7 +42,7 @@ public Student(){
 
 }
 
-public student(int id, String name, String email,) {
+public Student(Integer id, String name, String email) {
     this.id = id;
     this.name = name;
     this.email = email;
