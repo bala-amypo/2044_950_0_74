@@ -6,7 +6,7 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
 @Entity
-public class Student {
+public class StudentEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
@@ -31,11 +31,11 @@ public class Student {
     public void setEmail(String email) {
         this.email = email;
     }
-    public Student(Integer id, String name, String email) {
+    public StudentEntity(Integer id, String name, String email) {
         this.id = id;
         this.name = name;
         this.email = email;
     }
-    public Student() {
+    public StudentEntity() {
     }
 }
