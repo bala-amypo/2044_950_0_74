@@ -4,14 +4,14 @@ import java.time.LocalDate;
 import jakarta.persistance.Entity;
 import jakarta.persistance.GeneratedValue;
 import jakarta.persistance.GeneratedType;
+import jakarta.persistance.*;
 
 public class StudentEntity {
     @id
-    @GeneratedValue(strategy = G)
-    private int id;
+    @GeneratedValue(strategy = GeneratedType.IDENTITY)
+    private Integer id;
     private String name;
     private String email;
-
 
 public int getId() {
     return id;
